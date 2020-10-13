@@ -38,8 +38,8 @@
             <div>
                 <h3>Get Started Today!</h3>
                 <p>Fill out this form and one of our trainers will schedule a consult</p>
-                <!-- form for client sign-up -->
-                <form>
+                
+                <form> <!-- form for client sign-up -->
                     <label for="fullName">Enter full name:</label>
                     <input type="text" id="fullName" name="name" placeholder="Your Name"/>
                     <label for="email">Enter email address:</label>
@@ -47,11 +47,18 @@
                     <label for="phoneNumber">Enter a telephone number:</label>
                     <input type="tel" id="phoneNumber" name="number" placeholder="Phone Number"/>
                 </form>
-                <p>
+                <p> <!-- radio type input -->
                     Have you worked out with a trainer before
+                    <input type="radio" name="trainer-confirm" id="trainer-yes"/>
+                    <label for="trainer-yes">Yes</label>
+                    <input type="radio" name="trainer-confirm" id="trainer-no"/>
+                    <label for="trainer-no">No</label>
                 </p>
-                <p>I acknowledge I am at least 18 years of age</p>
-                <button title="Submit form">Get Running!</button>
+                <p> <!-- checkbox to confirm age -->
+                    <label for="age-confirm">I acknowledge I am at least 18 years of age</label>
+                    <input type="checkbox" name="age" id="age-confirm"/>
+                </p> <!-- button for submission of app -->
+                <button title="Submit form" type="submit">Get Running!</button>
             </div>
         </section>
         
