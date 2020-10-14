@@ -85,6 +85,7 @@ section {
     position: relative;
 }
 
+/* styling for hero submit form */
 .hero-form {
     color: #024e76;
     background-color: #fce138;
@@ -125,4 +126,40 @@ section {
     background-color: #024e76;
     font-size: 16px;
     padding: 10px 20px;
+}
+
+/* styling for what we do section */
+.intro {
+    text-align: center;
+}
+
+.intro h2 {
+    font-size: 55px;
+    color: #024e76;
+    border-bottom: 3px solid #fce138;
+    margin-bottom: 35px;
+    padding: 0 100px 20px;
+    display: inline-block;
+}
+
+.intro p {
+    line-height: 1.7;
+    width: 80%;
+    color: #39a6b2;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+/*styling for what you do section */
+.steps {
+    text-align: center;
+    background-color: #fce138;
+}
+
+.steps h2 {
+    font-size: 55px;
+    color: #024e76;
+    margin-bottom: 35px;
+    border-bottom: 3px solid #39a6b2;
+    padding: 0 100px 20px;
 }
