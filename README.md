@@ -1,14 +1,14 @@
 # Run Buddy
 
-##Purpose
+## Purpose
 A website that offers fitness training services.
 
-##Built With
-*HTML
-*CSS
+## Built With
+* HTML
+* CSS
 
-##Website
+## Website
 
 
-##Contribution
+## Contribution
 Made with ❤️ by Tunde Aladetohun
