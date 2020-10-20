@@ -8,7 +8,7 @@ A website that offers fitness training services.
 * CSS
 
 ## Website
-
+https://baladetohun12.github.io/run-buddy/
 
 ## Contribution
 Made with ❤️ by Tunde Aladetohun
