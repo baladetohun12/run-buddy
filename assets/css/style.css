@@ -57,18 +57,19 @@ footer {
     background-color: #fce138;
     width: 100%;
     padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 footer h2 {
     font-size: 30px;
     color: #024e76;
     margin: 0px;
-    display: inline;
 }
 
 footer div {
-    float: right;
-    line-height: 1;
+    line-height: 1.15;
     text-align: right;
 }
 
@@ -85,8 +86,25 @@ section {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
     background-position: center;
-    height: 600px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* styling for call to action (CTA) in hero */
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    color: #fce138;
+    font-size: 55px;
 }
 
 /* styling for hero submit form */
@@ -95,11 +113,7 @@ section {
     background-color: #fce138;
     border: solid 3px #024e76;
     padding: 20px;
-    width: 500px;
-    position: absolute;
     box-shadow: 5px 5px 50px #000000;
-    bottom: 120px;
-    right: 140px;
 }
 
 .hero-form h3 {
