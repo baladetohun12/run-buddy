@@ -15,10 +15,16 @@ header {
     /* padding adding space to where the header starts and the content start */
     padding: 20px 35px;
     background-color: #39a6b2;
-    box-shadow: 1px 1px 10px #000000;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
 }
 
 header h1 {
@@ -26,12 +32,13 @@ header h1 {
     font-size: 36px;
     color: #fce138;
     margin: 0px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     color: #fce138;
     text-decoration: none;
-    text-shadow: 1px 1px 2px #000000;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav {
@@ -51,6 +58,13 @@ header nav ul li a {
     font-weight: lighter;
     font-size: 1.55vw;
     font-style: italic;
+}
+
+header nav ul li a:hover {
+    background-color: #fce138;
+    color: #024e76;
+    border-radius: 5px;
+    text-shadow: none;
 }
 
 /* styling for footer */
@@ -86,11 +100,12 @@ section {
 .hero {
     background-image: url("../images/hero-bg.jpg");
     background-size: cover;
-    background-position: center;
+    background-position: 80%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     align-items: flex-start;
+    background-attachment: fixed;
 }
 
 /* styling for call to action (CTA) in hero */
@@ -107,15 +122,17 @@ section {
     font-style: italic;
     color: #fce138;
     font-size: 55px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 /* styling for hero submit form */
 .hero-form {
     color: #024e76;
-    background-color: #fce138;
+    background-color: rgba(252, 225, 56, 0.8);
     border: solid 3px #024e76;
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 5px 5px 50px #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 40%;
     margin: 3.5%;
 }
@@ -133,10 +150,17 @@ section {
     font-size: 16px;
     border: solid 1px #024e76;
     display: block;
+    background-color: rgba(255, 255, 255, 0.75);
     color: #024e76;
     padding: 7px 15px;
     width: 100%;
     margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.form-input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 .hero-form label {
@@ -148,6 +172,11 @@ section {
     background-color: #024e76;
     font-size: 16px;
     padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.hero-form button:hover { /* hero button will turn teal on mouse hover */
+    background-color: #39a6b2;
 }
 
 /* adding new css rules to combat redundancies */
@@ -191,12 +220,16 @@ section {
 .step {
     margin: 50px auto;
     padding-bottom: 50px;
-    width: 80%;
     border-bottom: 1px solid #39a6b2;
+    width: 80%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+}
+
+.step:last-child {
+    border-bottom: none;
 }
 
 .step-img {
@@ -328,10 +361,16 @@ section {
     padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
+    background-color: rgba(255, 255, 255, 0.75);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
+    border-radius: 5px;
+}
 
+.contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: 0;
 }
 
 .contact-form button {
@@ -342,6 +381,12 @@ section {
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
+    border-radius: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #39a6b2;
+    color: #fce138;
 }
 
 .text-left {
@@ -409,12 +454,13 @@ section {
     font-weight: bold;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+/* MEDIA QUERY FOR SMALL DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
     
     header {
         padding-bottom: 0;
         justify-content: center;
+        position: relative;
     }
 
     header h1 {
